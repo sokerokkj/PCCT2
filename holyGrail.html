@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #666;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            flex: 1;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        aside {
+            background-color: #666;
+            color: #fff;
+            width: 200px;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .main-content {
+            flex: 1;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside>
+            <h2>Sidebar</h2>
+        </aside>
+        <div class="main-content">
+            <main>
+                <h1>Main Content</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </main>
+        </div>
+        <aside>
+            <h2>Sidebar</h2>
+        </aside>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
