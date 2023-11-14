@@ -25,7 +25,8 @@ main {
     flex: 1;
     background-color: #f0f0f0;
     padding: 230px;
-    text-align:center ;
+    text-align:center ;    
+
 }
 
 aside {
@@ -48,6 +49,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     margin-left: 150px;
+    margin-right: 150px;
     padding: 10px;
     ;
 
@@ -71,7 +73,8 @@ footer {
 
 .col-md-5_tituloportal{
 
-    width: 580px;
+    width: 577px;
+    height: 50px;
 
 }
 
@@ -81,18 +84,33 @@ footer {
     font-size: 25px;
 }
 
-.icones{
+/*.icones{
     text-align: center;
     margin-top: 10px;
-}
+}*/
 
 .fotter01{
     padding-left: 167px;
     padding-right: 850px;
 }
 
-img{
+.icons, .icones{
     border-radius: 50%;
     width:50px;
     height: 75px;
 }
+
+/*img{
+    border-radius: 50%;
+    width:50px;
+    height: 75px;
+}*/
+
+.reciclagem{
+    border-radius: 50%;
+    width:50px;
+    height: 75px;   
+}
+
+
+

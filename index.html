@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="mapa.js"></script>
+
     <title>Ikicingoki</title>
 </head>
 
@@ -13,20 +15,20 @@
         <div class="barra-superior">
             <div class="titulo-do-bumbumguloso">
 
-                <p>IKICINGOKI</p>
+                <img class="reciclagem" src="image/ikicingoki.png"  alt="">
+                IKICINGOKI
+                <p>Reunidos na luta da reciclagem</p>
 
             </div>
 
-            <!--<div class="col-md-5_tituloportal">-->
+            <div class="col-md-5_tituloportal">
 
             </div>
-
-            <div class="icones">
                 <h5>
-                    <div class="icons">
-                        <img src="image/fb.png" alt="fb">
-                        <img src="image/ttk.png" alt="ttk">
-                        <img src="image/twt.png" alt="twt">
+                    <div>
+                        <img class="icons" src="image/fb.png" alt="fb">
+                        <img class="icons" src="image/ttk.png" alt="ttk">
+                        <img class="icons" src="image/twt.png" alt="twt">
                         *icone tt
                     </div>
                     
@@ -59,9 +61,27 @@
 
         <div class="main-content">
 
-            <main>
+            <main id="mapa"> 
 
-                <h1>Main Content</h1>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlNDHGtG0DlxNjaljufDc4mHjkLI7xDhE&callback=inicializarMapa" async defer></script>
+
+                <script>
+                    function inicializarMapa() {
+                        var coordenadas = { lat: -3.10719, lng: -60.0261 }; // Coordenadas iniciais (exemplo: São Paulo, Brasil)
+                        var mapa = new google.maps.Map(document.getElementById('mapa'), {
+                            zoom: 12,
+                            center: coordenadas
+                        });
+                
+                        var marcador = new google.maps.Marker({
+                            position: coordenadas,
+                            map: mapa,
+                            title: 'Localização'
+                        });
+                    }
+                </script>
+
+                <!--<script src="mapa.js"></script>=-->
                 
             </main>
 
